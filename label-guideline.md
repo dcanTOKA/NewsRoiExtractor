@@ -2,45 +2,55 @@
 
 ### 1. Veri Kumesi 
 
-Veri kumesi, farkli DOM yapilarini ve sablon cesitliligini temsil etmek amaciyla populer ulusal, yerel ve tematik 35 farkli Turkce haber sitesinden derlenen 100 adet guncel haber sayfasindan olusmaktadir.
+Veri kumesi, farkli DOM yapilarini ve sablon cesitliligini temsil etmek amaciyla populer ulusal, yerel ve tematik 45 farkli Turkce haber sitesinden derlenen 100 adet guncel haber sayfasindan olusmaktadir.
 
 Veri kumesinde yer alan haber siteleri:
 
-* sondakika.com
-* cnnturk.com
-* haberturk.com
-* sde.org.tr
-* memurlar.net
-* hurriyet.com
-* canakkaleolay.com
-* mersinhaber.com
-* dw.com
-* gzt.com
-* ahaber.com.tr
 * aa.com.tr
+* ahaber.com.tr
+* bbc.com
+* benguturk.com
+* birgun.net
+* bthaber.com
+* canakkaleolay.com
+* cnnturk.com
+* cumhuriyet.com.tr
+* dha.com.tr
+* dogrulukpayi.com
+* donanimhaber.com
+* dw.com
+* emsal.com
+* euronews.com
+* evrensel.net
+* gazeteoksijen.com
 * goal.com
+* gzt.com
+* haber.sol.org.tr
+* haberler.com
+* haberturk.com
+* hurriyet.com
 * indeksonline.net
 * karamangundem.com
-* haberler.com
-* saglikaktuel.com
-* bthaber.com
-* yenisafak.com
-* medyascope.tv
-* milliyet.com.tr
+* kenttv.net
+* kocaelidenge.com
 * koroglugazetesi.com
-* emsal.com
-* birgun.net
-* dha.com.tr
-* donanimhaber.com
-* bbc.com
-* evrensel.net
+* medyascope.tv
+* memurlar.net
+* mersinhaber.com
+* milliyet.com.tr
 * ntv.com.tr
-* gazeteoksijen.com
-* t24.com.tr
+* paraajansi.com.tr
 * paratic.com
-* euronews.com
-* dogrulukpayi.com
-* benguturk.com
+* patronlardunyasi.com
+* sacitaslan.com
+* saglikaktuel.com
+* sde.org.tr
+* sondakika.com
+* sozcu.com.tr
+* star.com.tr
+* t24.com.tr
+* usakgundem.com
+* yenisafak.com
 
 ### Etiketleme Sureci
 
@@ -54,11 +64,11 @@ Iki asamali bir etiketleme stratejisi izlenmistir.
 Ground-Truth metinler olusturulurken asagidaki kurallar uygulanmistir.
 
 #### Dahil Edilenler
-* Haber basligi
+* Haber basligi (`<h1>`, `<h2>`)
 * Haber girisi (ozet)
-* Ana metin govdesi
-* Sayfa icindeki hiyerarsik alt basliklar
-* Liste ogeleri (string)
+* Ana metin govdesi (`<p>`))
+* Sayfa icindeki hiyerarsik alt basliklar (`<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`)
+* Liste ogeleri (duz metin olarak alinmistir) (`<ul>`, `<ol>`, `<li>`)
 
 #### Dahil Edilmeyenler
 * Reklamlar
@@ -72,16 +82,16 @@ Ground-Truth metinler olusturulurken asagidaki kurallar uygulanmistir.
 
 ### Veri Kumesi Istatistikleri ve Dagilimi
 
-Genisletilmis kumede yer alan 83 verinin konus basliklarina gore dagilimi asagidaki gibidir:
+Tum veri kumesinde (Cekirdek + Genisletilmis Kume) yer alan 100 verinin konus basliklarina gore dagilimi asagidaki gibidir:
 
 | Konu Kategorisi | Veri Sayısı | Yüzde (%) |
 | --- | --- | --- |
-| Diğer (Genel, Gündem, Magazin vb.) | 27 | 32.5% |
-| Finans | 20 | 24.1% |
-| İş Dünyası | 19 | 22.9% |
-| Ekonomi | 9 | 10.8% |
-| Yerel Haberler | 8 | 9.6% |
-| **Toplam** | **83** | **100%** |
+| Diğer (Genel, Gündem, Magazin vb.) | 30 | 30.0% |
+| Finans | 23 | 23.0% |
+| İş Dünyası | 23 | 23.0% |
+| Yerel Haberler | 15 | 15.0% |
+| Ekonomi | 9 | 9.0% |
+| **Toplam** | **100** | **100%** |
 
 ### Dataset Formati
 
